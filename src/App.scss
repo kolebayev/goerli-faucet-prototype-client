@@ -1,0 +1,124 @@
+.app {
+  background-color: #fff;
+  .header {
+    background: linear-gradient(
+      292.23deg,
+      #007bff -3.33%,
+      #0063cc 23.7%,
+      #0a33a6 49.99%,
+      #00238c 73.48%
+    );
+    height: auto;
+    &_main {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 24px 0;
+      &_app-logo {
+        height: 26px;
+      }
+    }
+    &_subheader {
+      margin: 70px auto 50px auto;
+      & > div:first-of-type {
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 100%;
+        text-align: center;
+        color: #419dff;
+        margin-bottom: 16px;
+      }
+      & > div:last-of-type {
+        font-weight: 600;
+        font-size: 60px;
+        line-height: 100%;
+        text-align: center;
+        color: #ffffff;
+      }
+    }
+  }
+
+  .content {
+    background-color: #fff;
+    // flex-grow: 1;
+    .card {
+      width: 480px;
+      margin: 50px auto;
+      border-radius: 6px;
+      box-shadow: 0px 76px 174px rgba(137, 137, 137, 0.07),
+        0px 30.8742px 72.693px rgba(137, 137, 137, 0.0636527),
+        0px 14.5684px 38.8652px rgba(137, 137, 137, 0.0503893),
+        0px 6.54612px 21.7875px rgba(137, 137, 137, 0.0349614),
+        0px 2.41225px 11.5712px rgba(137, 137, 137, 0.0196703),
+        0px 0.499309px 4.81503px rgba(137, 137, 137, 0.00671111);
+      &_header {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 140%;
+        margin-bottom: 20px;
+        text-align: center;
+        .eth-icon {
+          position: relative;
+          bottom: -3px;
+          margin-right: 2px;
+        }
+      }
+      .faucet-form {
+        .ant-form-item:last-of-type {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+
+  .footer {
+    width: 480px;
+    background-color: #fff;
+    margin: 0 auto;
+    padding: 0;
+    & > div:last-child {
+      text-align: center;
+    }
+    & > * {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .app {
+    .header {
+      padding: 0 20px;
+      width: 100vw;
+      margin: 0;
+      &_subheader {
+        margin: 40px auto 28px auto;
+
+        & > div:first-of-type {
+          font-size: 18px;
+          color: #419dff;
+          margin-bottom: 18px;
+        }
+
+        & > div:last-of-type {
+          font-size: 36px;
+        }
+      }
+    }
+    .content {
+      padding: 0 20px;
+      width: 100vw;
+      margin: 0;
+      .card {
+        margin: 30px auto;
+        width: calc(100vw - 2 * 20px);
+      }
+    }
+    .footer {
+      padding: 0 20px;
+      margin: 0;
+      width: 100vw;
+    }
+  }
+}
