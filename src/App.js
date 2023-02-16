@@ -38,7 +38,7 @@ function App() {
             className="header_main_app-logo"
             alt="Chainstack labs"
           />
-          <Button type="primary">Log in to Chainstack</Button>
+          <Button type="primary">Sign in with Chainstack</Button>
         </div>
         <div className="header_subheader">
           <div>Fuel your decentralized future with </div>
@@ -99,7 +99,7 @@ function App() {
                   }}
                   htmlType="submit"
                 >
-                  Get tokens
+                  Claim tokens
                 </Button>
               ) : (
                 <Alert
